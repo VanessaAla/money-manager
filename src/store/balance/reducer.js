@@ -11,6 +11,13 @@ export default function reducer(state = initialState, action) {
       };
     }
 
+    case "balance/withdraw": {
+      return {
+        ...state,
+        amount: state.amount - action.payload,
+      };
+    }
+
     default: {
       return state;
     }

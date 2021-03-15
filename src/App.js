@@ -11,7 +11,7 @@ function App() {
       <p>Balance: {balance}$</p>
       <button
         onClick={() => {
-          //setBalance(balance + 10);
+          setBalance(balance + 10);
           dispatch(deposit(10));
         }}
       >

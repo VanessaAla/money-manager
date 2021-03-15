@@ -18,6 +18,13 @@ export default function reducer(state = initialState, action) {
       };
     }
 
+    case "balance/reset": {
+      return {
+        ...state,
+        amount: initialState.amount, //resets the balance to its' initial value.
+      };
+    }
+
     default: {
       return state;
     }
